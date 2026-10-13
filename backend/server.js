@@ -22,6 +22,9 @@ mongoose.connect(process.env.MONGO_URL)
 })
 
 // Contact routes
+app.get("/",(req,res)=>{
+    res.redirect("/api/contacts")
+})
 app.use("/api/contacts",ContactRoutes)
 
 app.listen(5000,()=>{

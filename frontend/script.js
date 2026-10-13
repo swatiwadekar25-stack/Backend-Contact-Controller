@@ -22,7 +22,7 @@ contactForm.addEventListener("submit", async (e) => {
     try {
 
         const response = await fetch(
-            "http://localhost:5000/api/contacts",
+            "https://backend-contact-controller.vercel.app/api/contacts",
             {
                 method: "POST",
 
